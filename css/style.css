@@ -70,13 +70,9 @@ a {
 }
 
 .logo {
-    width: 50%;
     display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 70px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .menu {
@@ -112,7 +108,7 @@ a {
     margin-bottom: 5px;
 }
 
-.recherche-et-filtres p {
+.sous-titre {
     margin-top: 0px;
     margin-bottom: 2.5%;
 }
@@ -124,6 +120,11 @@ a {
 ::placeholder {
     color: black;
     opacity: 1;
+}
+
+.info {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /** Recherche **/
@@ -170,7 +171,6 @@ a {
 .filtres {
     font-size: 17px;
     display: flex;
-    margin-bottom: 2%;
 }
 
 .filtres-buttons {
@@ -196,8 +196,6 @@ a {
 .filtres button:hover {
     background-color: var(--filter-bg-color);
 }
-
-
 
 .filtres i {
     padding-right: 10%;
@@ -341,17 +339,15 @@ a {
 .activites-cards img {
     object-fit: cover;
     width: 100%;
-    height: 380px;
+    height: 80%;
 }
 
 .activites-cards .card-text {
     margin: 0px;
     font-size: 17px;
     background-color: white;
-    padding: 20px;
+    padding: 0px;
 }
-
-
 
 
 /******* Footer **********/
