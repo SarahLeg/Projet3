@@ -96,9 +96,6 @@ a {
     border-top: 2px solid var(--main-color);
  }
 
-
-
-
 /****** searchbar et filters **********/
 
 .hero {
@@ -188,10 +185,11 @@ a {
 }
 
 .filters button {
-    font-size: 95%;
+    font-size: 15px;
     font-weight: bold;
-    width: 150px;
-    padding: 10px;
+    text-wrap: nowrap;
+    padding: 15px;
+    padding-right: 30px;
     margin-right: 10px;
     border: 2px solid var(--main-bg-color);
     border-radius: 50px;
@@ -243,7 +241,7 @@ a {
 }
 
 .hebergements p {
-    font-weight: bold;
+    font-size: 15px;
 }
 
 .hebergements-cards {
@@ -350,9 +348,8 @@ a {
 .activites-cards {
     display: flex;
     justify-content: space-between;
-    padding-right: 55px;
-    padding-left: 35px;
-    padding-bottom: 80px;
+    padding: 0 35px;
+    margin-bottom: 80px;
 }
 
 .activites-cards .card-content {
@@ -366,12 +363,12 @@ a {
 .activites-cards img {
     object-fit: cover;
     width: 100%;
-    height: 87%;
+    height: 80%;
 }
 
 .activites-cards .card-text {
     margin: 0px;
-    font-size: 17px;
+    font-size: 15px;
     background-color: white;
     padding: 15px;
 }
@@ -379,16 +376,12 @@ a {
 
 /******* Footer **********/
 
-.flexfooter {
+.footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding-left: 1%;
-    padding-right: 25%;
-    margin-bottom: 3%;
-}
-
-   .mainbgbackground {
+    padding-left: 15px;
+    padding-right: 400px;
     background-color: var(--main-bg-color);
 }
 
@@ -444,10 +437,18 @@ a {
     .activites-cards .card-text {
         font-size: 15px;
     }
+
+    .footer {
+        padding-right: 15%;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    body {
+        margin: auto;
+    }
 
     .main-container {
         padding: 0px;
@@ -457,13 +458,15 @@ a {
         flex-direction: column;
         align-items: center;
         height: 100px;
+        margin-top: 20px;
     }
 
-    .logo {
+    .header_logo {
         width: 15%;
     }
 
     .menu {
+        gap: 0;
         width: 100%;
         text-align: center;
     }
@@ -507,7 +510,7 @@ a {
      }
 
      .searchbar button {
-        width: 18%;
+        width: 50px;
         border-radius: 15px 15px 15px 15px;
         margin-left: -10px;
         font-size: 0;
@@ -523,7 +526,9 @@ a {
     }
     
     .filters-buttons button {
-        flex-flow: row wrap;
+        margin-left: 1%;
+        font-size: 13px;
+        width: 44%;
         margin-bottom: 20px;
     }
 
@@ -574,7 +579,9 @@ a {
     margin-bottom: 10px !important;
    }
 
-
+   .footer {
+    flex-direction: column;
+   }
 
 
 
