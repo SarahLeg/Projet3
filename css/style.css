@@ -23,9 +23,9 @@ body {
 }
 
 .main-container {
+    max-width: 1440px;
     width: 100%;
     min-width: 320px;
-    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -542,6 +542,7 @@ a {
     }
 
     .populaires {
+        margin-top: 0px;
         border-radius: 0px !important;
     }
 
@@ -561,8 +562,14 @@ a {
         flex-direction: column;
     }
 
+    .hebergements-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
     .hebergements-cards a {
         width: 100%;
+        margin: 3px;
     }
 
     .activites h2 {
@@ -582,7 +589,6 @@ a {
    .footer {
     flex-direction: column;
    }
-
 
 
 }
